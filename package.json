@@ -5,9 +5,11 @@
   "description": "A raspberry pi car application",
   "author": "Bo Meers <bmeers5@gmail.com>",
   "license": "CC0-1.0",
+  "repository": "https://github.com/bomeers/Piro",
   "scripts": {
     "start": "electron .",
-    "publish": "build --linux -p always"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "devDependencies": {
     "electron": "^6.0.3",
@@ -20,16 +22,15 @@
   "build": {
     "appId": "com.github.bomeers.Piro",
     "linux": {
-      "category": "none",
+      "category": "Network",
       "target": [
-        "AppImage",
-        "tar.gz"
-      ]
-    },
-    "publish": {
-      "provider": "github",
-      "owner": "bomeers",
-      "repo": "Piro"
+        "AppImage"
+      ],
+      "publish": {
+        "provider": "github",
+        "owner": "bomeers",
+        "repo": "Piro"
+      }
     }
   }
 }
