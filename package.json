@@ -1,7 +1,7 @@
 {
   "name": "piro",
   "main": "main.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A raspberry pi car application",
   "author": "Bo Meers <bmeers5@gmail.com>",
   "license": "CC0-1.0",
@@ -9,7 +9,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir --linux",
-    "dist": "electron-builder --linux"
+    "dist": "electron-builder --linux -p always"
   },
   "devDependencies": {
     "electron": "^6.0.3",
