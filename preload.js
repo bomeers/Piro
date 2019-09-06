@@ -2,14 +2,6 @@
 // It has the same sandbox as a Chrome extension.
 var appVersion = require('electron').remote.app.getVersion();
 window.addEventListener('DOMContentLoaded', () => {
-  // const replaceText = (selector, text) => {
-  //   const element = document.getElementById(selector)
-  //   if (element) element.innerText = text
-  // }
-
-  // for (const type of ['chrome', 'node', 'electron']) {
-  //   replaceText(`${type}-version`, process.versions[type])
-  // }
 
   // Master Page - Header
   const loadJQuery = document.createElement("script");
@@ -19,16 +11,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // Master Page - Navbar
-
-  // Piro Version
-  document.getElementById('version').innerText = appVersion;
-  const {
-    ipcRenderer
-  } = require('electron');
-  ipcRenderer.on('message', function (event, text) {
-    var container = document.getElementById('messages');
-    var message = document.createElement('div');
-    message.innerHTML = text;
-    container.appendChild(message);
-  })
 })
