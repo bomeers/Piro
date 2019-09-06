@@ -1,7 +1,7 @@
 {
   "name": "piro",
   "main": "main.js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A raspberry pi car application",
   "author": "Bo Meers <bmeers5@gmail.com>",
   "license": "CC0-1.0",
@@ -19,9 +19,10 @@
     "electron-log": "^3.0.7",
     "electron-updater": "^4.1.2"
   },
-  "icon": "icon.png",
+
   "build": {
     "appId": "com.github.bomeers.Piro",
+    "icon": "icon.png",
     "linux": {
       "category": "Network",
       "target": {
