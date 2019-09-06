@@ -22,7 +22,7 @@
 
   "build": {
     "appId": "com.github.bomeers.Piro",
-    "icon": "icon.png",
+    "icon": "../../../icon.png",
     "linux": {
       "category": "Network",
       "target": {
