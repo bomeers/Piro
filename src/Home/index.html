@@ -7,19 +7,21 @@
 
 <body>
   Current version: <span id="version">vX.Y.Z</span>
+  <p>Messages:</p><br>
   <div id="messages"></div>
-  <!-- <script>
+  <script>
     // Listen for messages
-    const {
-      ipcRenderer
-    } = require('electron');
-    ipcRenderer.on('message', function (event, text) {
-      var container = document.getElementById('messages');
-      var message = document.createElement('div');
-      message.innerHTML = text;
-      container.appendChild(message);
-    })
-  </script> -->
+    // const {
+    //   ipcRenderer
+    // } = require('electron');
+    // ipcRenderer.on('message', function (event, text) {
+    //   var container = document.getElementById('messages');
+    //   var message = document.createElement('div');
+    //   message.innerHTML = text;
+    //   container.appendChild(message);
+    // })
+  </script>
+  <script src="renderer.js"></script>
 </body>
 
 </html>
