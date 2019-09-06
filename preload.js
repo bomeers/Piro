@@ -1,6 +1,5 @@
 // All of the Node.js APIs are available in the preload process.
 // It has the same sandbox as a Chrome extension.
-var appVersion = require('electron').remote.app.getVersion();
 window.addEventListener('DOMContentLoaded', () => {
 
   // Master Page - Header
