@@ -2,28 +2,22 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <title>Electron Updater Example</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <body>
-  Current version: <span id="version">vX.Y.Z</span>
-  <p>Messages:</p><br>
-  <div id="messages"></div>
-  <script>
-    // This is not able to load client side!
+  <div class="body-container">
+    <h1 class="logo">🔥Piro</h1>
+  </div>
 
-    // Listen for messages
-    // const {
-    //   ipcRenderer
-    // } = require('electron');
-    // ipcRenderer.on('message', function (event, text) {
-    //   var container = document.getElementById('messages');
-    //   var message = document.createElement('div');
-    //   message.innerHTML = text;
-    //   container.appendChild(message);
-    // })
-  </script>
-  <script src="renderer.js"></script>
+  <div class="information">
+    Current version: <span id="version">vX.Y.Z</span>
+    <div id="messages"></div>
+  </div>
+
+  <script src="./renderer.js"></script>
 </body>
 
 </html>

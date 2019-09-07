@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
   // Master Page - Header
+  // Will update later to support offline usage
   const loadJQuery = document.createElement("script");
   loadJQuery.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
   loadJQuery.type = 'text/javascript';

@@ -16,6 +16,7 @@ const {
 autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
+log.info('Connect to Wi-Fi to check for updates')
 
 
 //-------------------------------------------------------------------
@@ -36,7 +37,7 @@ function createDefaultWindow() {
     }
   });
   win.loadFile("app/Home/index.html");
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
   win.on('closed', () => {
     win = null;
   });

@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(38, 48, 68);
+    color: rgb(235, 235, 235);
+    overflow-x: hidden;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.logo {
+    font-size: 150px;
+}
