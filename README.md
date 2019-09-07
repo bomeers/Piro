@@ -6,6 +6,6 @@ To install the AppImage on raspbian, refer to [this form](https://stackoverflow.
 
 To get bluetooth working with Piro, follow [this guide](https://www.raspberrypi.org/forums/viewtopic.php?t=235519)
 
-If you are using Mausberry Circuits car switch, follow [this guide[(https://mausberry-circuits.myshopify.com/pages/setup)
+If you are using Mausberry Circuits car switch, follow [this guide](https://mausberry-circuits.myshopify.com/pages/setup)
 
 More detailed setup info to come.
