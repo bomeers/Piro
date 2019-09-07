@@ -1,22 +1,38 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
+  "name": "piro",
+  "main": "app/Main/main.js",
+  "version": "0.1.0",
+  "description": "A raspberry pi car application",
+  "author": "Bo Meers <bmeers5@gmail.com>",
   "license": "CC0-1.0",
+  "repository": "https://github.com/bomeers/Piro",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "publish": "electron-builder --linux -p always"
+  },
   "devDependencies": {
-    "electron": "^6.0.0"
+    "electron": "^6.0.3",
+    "electron-builder": "^21.2.0"
+  },
+  "dependencies": {
+    "electron-log": "^3.0.7",
+    "electron-updater": "^4.1.2"
+  },
+  "build": {
+    "appId": "com.github.bomeers.Piro",
+    "linux": {
+      "category": "Network",
+      "target": {
+        "target": "AppImage",
+        "arch": "armv7l"
+      },
+      "publish": {
+        "provider": "github",
+        "owner": "bomeers",
+        "repo": "Piro"
+      }
+    }
   }
 }
