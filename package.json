@@ -1,6 +1,6 @@
 {
   "name": "piro",
-  "main": "main.js",
+  "main": "app/Main/main.js",
   "version": "0.0.9",
   "description": "A raspberry pi car application",
   "author": "Bo Meers <bmeers5@gmail.com>",
@@ -22,7 +22,6 @@
   },
   "build": {
     "appId": "com.github.bomeers.Piro",
-    "icon": "file:icon.png",
     "linux": {
       "category": "Network",
       "target": {
