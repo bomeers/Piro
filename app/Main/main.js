@@ -32,8 +32,8 @@ function sendStatusToWindow(text) {
 
 function createDefaultWindow() {
   win = new BrowserWindow({
-    width: 1280,
-    height: 720,
+    width: 800,
+    height: 520,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
