@@ -1,7 +1,7 @@
 {
   "name": "piro",
   "main": "app/Main/main.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A raspberry pi car application",
   "author": "Bo Meers <bmeers5@gmail.com>",
   "license": "CC0-1.0",
